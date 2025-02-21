@@ -73,10 +73,10 @@ jobs:
         env:
           #DOCKER_REPO: ${{ secrets.DOCKERHUB_USERNAME }}/my-nginx  # Changed to use your username and repo name directly
           #DOCKER_REPO: ${{ secrets.DOCKERHUB_REPO }}/freestyle-app # Changed to use your username and repo name directly
-          DOCKER_REPO: ${{ secrets.DOCKERHUB_USERNAME }}/webgameapp # Changed to use your username and repo name directly
+          DOCKER_REPO: ${{ secrets.DOCKERHUB_USERNAME }}/webgame-app # Changed to use your username and repo name directly
           #DOCKER_REPO: freestyle-app # Changed to use your username and repo name directly
         run: |
           docker tag nginx-test:latest $DOCKER_REPO:latest
           docker push $DOCKER_REPO:latest
-          echo "docker_image_pushed:***/webgameapp:latest"
+          echo "docker_image_pushed:***/webgame-app:latest"
           
