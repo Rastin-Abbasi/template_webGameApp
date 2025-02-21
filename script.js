@@ -6,7 +6,8 @@ let gameover = false;
 
 // Game functions
 function initGame() {
-    // Initialize game elements
+    snake = [{ x: 10, y: 10 }];
+    food = { x: 5, y: 5 };
 }
 
 function updateGame() {
